@@ -1,0 +1,75 @@
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh; /* Set height to 100% of viewport height */
+  }
+  
+  .table-container {
+    width: 100%;
+    max-width: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .verticalDivider{
+    width: 1px;
+    background-color: #ccc;
+    grid-column: 1;
+  }
+  .chart-container {
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .chart-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+  }
+  
+  .chart-title-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+  }
+  
+  .chart-buttons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10vh;
+  }
+  
+  .chart-buttons button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .chart-buttons button:hover {
+    background-color: #000000;
+  }
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .table-container {
+      max-width: 100%; /* On smaller screens, table takes full width */
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+    .chart-section{
+        max-width: 100%; /* On smaller screens, table takes full width */
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+  }
+
